@@ -142,3 +142,26 @@ a {
       font-size: 1.5rem;
    }
 }
+
+@media only screen and (max-width: 600px) {
+   .skills-container {
+      .skill-name {
+         font-size: 1rem;
+         font-weight: 500;
+         margin-top: 5px;
+      }
+      .skill-image {
+         width: 40%;
+         object-fit: contain;
+         // height: 100px;
+      }
+   }
+
+   .projects-container {
+      .card-container {
+         .card-text-container {
+            top: 0;
+         }
+      }
+   }
+}

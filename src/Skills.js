@@ -60,7 +60,7 @@ export default function Skills() {
                loop={true}
                navigation={true}
                grabCursor
-               slidesPerView={isDesktop ? 4 : 3}
+               slidesPerView={isDesktop ? 4 : 2}
                onSlideChange={() => console.log('slide change')}
                onSwiper={(swiper) => console.log(swiper)}
             >
