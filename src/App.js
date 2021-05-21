@@ -11,7 +11,7 @@ function App() {
    return (
       <div>
          <Navbar />
-         <div className='home-container'>
+         <div className='home-container' id='home'>
             <div className='container'>
                <Lottie
                   options={{
@@ -36,9 +36,11 @@ function App() {
                Varsada Rohit
             </motion.div>
             <div className='subTitle text-center'>Web and Mobile Debeloper</div>
-            <button>
-               View my work <i class='bi bi-arrow-right'></i>
-            </button>
+            <a href='#projects'>
+               <button>
+                  View my work <i class='bi bi-arrow-right'></i>
+               </button>
+            </a>
             {/* <div className="triangle"></div> */}
          </div>
 

@@ -7,17 +7,17 @@ export default function Contact() {
          <p className='title'>Interseted working with me </p>
 
          <div className='social-media-container'>
-            <a href='/'>
+            <a href='https://www.facebook.com/Rohit0928/'>
                <i class='bi bi-facebook'></i>
             </a>
 
-            <a href='/'>
+            <a href='https://www.instagram.com/patel_.rohit/'>
                <i class='bi bi-instagram'></i>
             </a>
-            <a href='/'>
+            <a href='https://github.com/varsada-rohit'>
                <i class='bi bi-github'></i>
             </a>
-            <a href='/'>
+            <a href='mailto:varsadarohit@gmail.com?body=mail From portfolio'>
                <i class='bi bi-envelope'></i>
             </a>
          </div>

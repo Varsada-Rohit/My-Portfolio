@@ -28,6 +28,7 @@ export default function Projects() {
                >
                   <Card
                      live={'https://fandbfrontend.vercel.app/'}
+                     viewCode={'https://github.com/tanayvan/FandB'}
                      image={fandb}
                   />
                </motion.div>
@@ -40,7 +41,10 @@ export default function Projects() {
                   }
                   className='col-12 col-lg-6 text-center'
                >
-                  <Card image={SES} />
+                  <Card
+                     image={SES}
+                     viewCode={'https://github.com/Varsada-Rohit/Project'}
+                  />
                </motion.div>
             </div>
             {/* <div className="triangle"></div> */}

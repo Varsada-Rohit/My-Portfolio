@@ -44,7 +44,7 @@ export default function Skills() {
    };
 
    return (
-      <div className='skills-container '>
+      <div className='skills-container' id='skills'>
          <motion.div
             ref={ref}
             variants={container}

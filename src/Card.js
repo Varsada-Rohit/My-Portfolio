@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Card({ live, image }) {
+export default function Card({ live, image, viewCode }) {
    return (
       <div className='card-container'>
          <div className='card-image-container'>
@@ -8,14 +8,16 @@ export default function Card({ live, image }) {
          </div>
          <div className='card-text-container'>
             <p className='left'>
-               <a href={live}>
+               <a href={viewCode}>
                   View Code <i class='bi bi-code-slash'></i>
                </a>
             </p>
             <p className='right'>
-               <a href={live} target='_blank' rel='noreferrer'>
-                  live <i class='bi bi-chevron-right icon'></i>
-               </a>
+               {live && (
+                  <a href={live} target='_blank' rel='noreferrer'>
+                     live <i class='bi bi-chevron-right icon'></i>
+                  </a>
+               )}
             </p>
          </div>
       </div>
