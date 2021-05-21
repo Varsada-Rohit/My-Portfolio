@@ -1,0 +1,144 @@
+.skills-container {
+   background-color: rgba(192, 203, 251, 0.2);
+   // border-top-right-radius: 100px;
+   // border-top-left-radius: 2px;
+   // border-bottom-left-radius: 100px;
+   // border-bottom-right-radius: 2px;
+
+   padding-block: 30px;
+
+   .title {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #3149f7;
+      margin-block: 20px;
+      margin-bottom: 30px;
+   }
+
+   .skill {
+      text-align: center;
+      margin-block: 20px;
+   }
+   .skill-name {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-top: 15px;
+   }
+   .skill-image {
+      width: 80%;
+      object-fit: contain;
+      height: 150;
+   }
+}
+
+// projects
+
+a {
+   text-decoration: none;
+}
+
+.projects-container {
+   padding-block: 30px;
+   margin-block: 40px;
+   overflow: hidden;
+   // position: relative;
+
+   .triangle {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: rotate(-360deg);
+      filter: blur(15px);
+      z-index: 1;
+      border-bottom: 0vw solid transparent;
+      border-bottom-width: 50vw;
+      // border-left: 10px solid transparent;
+      border-right: 100vh solid rgba(47, 220, 237, 0.2);
+      width: 0;
+      height: 0;
+      animation-name: triangle;
+      animation-duration: 1.5s;
+   }
+
+   .title {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #3149f7;
+      margin-block: 20px;
+      margin-bottom: 30px;
+   }
+
+   .card-container {
+      width: 90%;
+      text-align: center;
+      margin: auto;
+
+      &:hover .card-image-container {
+         transform: translateY(-15%);
+      }
+      .card-image-container {
+         border-radius: 5px;
+         overflow: hidden;
+         box-shadow: inset 1px 1px 1px -0.5px hsla(0deg, 0%, 100%, 0.7),
+            3px 3px 7px -3px rgba(0, 0, 0, 0.1);
+         position: relative;
+         z-index: 2;
+         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .card-text-container {
+         position: relative;
+         top: -30px;
+         // display: flex;
+         z-index: 1;
+         width: 90%;
+         margin: auto;
+
+         .left {
+            float: left;
+         }
+
+         .right {
+            color: #3149f7;
+            float: right;
+
+            .bi-chevron-right {
+               font-size: 14px;
+               font-weight: bolder !important;
+            }
+         }
+      }
+   }
+}
+//container
+
+.contact-container {
+   width: 100%;
+   color: white;
+   background-color: rgb(34, 106, 224);
+   text-align: center;
+   -webkit-backdrop-filter: opacity(0.5);
+
+   .social-media-container {
+      display: flex;
+      justify-content: center;
+
+      a {
+         margin-inline: 10px;
+         color: white;
+         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+         transform: scale(1.2);
+
+         &:hover {
+            transform: translateY(-50%);
+            transform: scale(1.5) translateY(-5px);
+         }
+      }
+   }
+
+   .title {
+      font-size: 1.5rem;
+   }
+}

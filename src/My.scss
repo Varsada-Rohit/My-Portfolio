@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;1,400&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+.home-container {
+   position: relative;
+   min-height: 100vh;
+   width: 100%;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+
+   .triangle {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: rotate(-180deg);
+      filter: blur(15px);
+      z-index: 1;
+      border-bottom: 0vw solid transparent;
+      border-bottom-width: 50vw;
+      // border-left: 10px solid transparent;
+      border-right: 100vh solid rgba(47, 220, 237, 0.2);
+      width: 0;
+      height: 0;
+      animation-name: triangle;
+      animation-duration: 1.5s;
+   }
+
+   @keyframes triangle {
+      from {
+         border-bottom-width: 0vw;
+      }
+      to {
+         border-bottom-width: 50vw;
+      }
+   }
+   @keyframes home {
+      from {
+         transform: scale(0.1);
+      }
+      to {
+         transform: scale(1);
+      }
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      animation-name: home;
+      animation-duration: 1s;
+   }
+
+   .title {
+      font-size: 4rem;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      // margin-bottom: 5px;
+
+      color: #397ae0;
+   }
+   .subTitle {
+      font-size: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      color: #212325;
+   }
+   button {
+      background-color: #4c2fed;
+      overflow: hidden;
+      border: none;
+      font-size: 1.2rem;
+      white-space: nowrap;
+      padding: 10px 15px;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 60px;
+
+      .bi-arrow-right::before {
+         vertical-align: middle;
+         transition: all ease 0.3s;
+         font-weight: 600 !important;
+      }
+
+      &:hover {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      &:hover .bi-arrow-right::before {
+         transform: rotate(90deg);
+      }
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .home-container {
+      .title {
+         font-size: 2.5rem;
+      }
+      .subTitle {
+         font-size: 1.2rem;
+      }
+   }
+}
