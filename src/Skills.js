@@ -18,7 +18,7 @@ import SwiperCore, { Navigation } from 'swiper/core';
 SwiperCore.use([Navigation]);
 
 export default function Skills() {
-   const { ref, inView, entry } = useInView({
+   const { ref, inView } = useInView({
       /* Optional options */
       threshold: 0.3,
       delay: 400,
@@ -67,26 +67,46 @@ export default function Skills() {
                <motion.div variants={item} className='row'>
                   <SwiperSlide>
                      <div className='skill'>
-                        <img className='skill-image' src={html} height={100} />
+                        <img
+                           className='skill-image'
+                           src={html}
+                           alt='HTML'
+                           height={100}
+                        />
                         <div className='skill-name'>HTML</div>
                      </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                      <div className='skill'>
-                        <img className='skill-image' src={css} height={100} />
+                        <img
+                           className='skill-image'
+                           src={css}
+                           alt='CSS'
+                           height={100}
+                        />
                         <div className='skill-name'>CSS</div>
                      </div>
                   </SwiperSlide>
                   <SwiperSlide>
                      <div className='skill'>
-                        <img className='skill-image' src={react} height={100} />
+                        <img
+                           className='skill-image'
+                           src={react}
+                           alt='REACT'
+                           height={100}
+                        />
                         <div className='skill-name'>React js</div>
                      </div>
                   </SwiperSlide>
                   <dSwiperSlidev>
                      <div className='skill'>
-                        <img className='skill-image' src={react} height={100} />
+                        <img
+                           className='skill-image'
+                           src={react}
+                           alt='React Native'
+                           height={100}
+                        />
                         <div className='skill-name'>React-Native</div>
                      </div>
                   </dSwiperSlidev>
@@ -97,6 +117,7 @@ export default function Skills() {
                            className='skill-image'
                            src={firebase}
                            height={100}
+                           alt='Firebase'
                         />
                         <div className='skill-name'>Firebase</div>
                      </div>
@@ -107,6 +128,7 @@ export default function Skills() {
                            className='skill-image'
                            src={mongoDb}
                            height={100}
+                           alt='MongoDB'
                         />
                         <div className='skill-name'>MongoDB</div>
                      </div>

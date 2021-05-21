@@ -4,7 +4,7 @@ export default function Card({ live, image }) {
    return (
       <div className='card-container'>
          <div className='card-image-container'>
-            <img src={image} width='100%' />
+            <img src={image} width='100%' alt='Project' />
          </div>
          <div className='card-text-container'>
             <p className='left'>
@@ -13,7 +13,7 @@ export default function Card({ live, image }) {
                </a>
             </p>
             <p className='right'>
-               <a href={live} target='_blank'>
+               <a href={live} target='_blank' rel='noreferrer'>
                   live <i class='bi bi-chevron-right icon'></i>
                </a>
             </p>

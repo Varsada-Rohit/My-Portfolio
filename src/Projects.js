@@ -6,7 +6,7 @@ import fandb from './assets/fandbnew.png';
 import SES from './assets/ses1.png';
 
 export default function Projects() {
-   const { ref, inView, entry } = useInView({
+   const { ref, inView } = useInView({
       /* Optional options */
       threshold: 0.3,
       delay: 400,

@@ -3,10 +3,8 @@ import Lottie from 'react-lottie';
 import coding from './assets/coding.json';
 import Navbar from './Navbar';
 import Skills from './Skills';
-import Card from './Card';
 import Projects from './Projects';
 import Contact from './Contact';
-import AppCarousal from './AppCarousal';
 import { motion } from 'framer-motion';
 
 function App() {
