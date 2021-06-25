@@ -35,7 +35,7 @@ function App() {
             >
                Varsada Rohit
             </motion.div>
-            <div className='subTitle text-center'>Web and Mobile Debeloper</div>
+            <div className='subTitle text-center'>Web and Mobile Developer</div>
             <a href='#projects'>
                <button>
                   View my work <i class='bi bi-arrow-right'></i>
